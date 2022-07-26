@@ -57,6 +57,7 @@ nav ul li a:hover {
 
 .download-resume {
    cursor: pointer;
+   color: var(--text-clr);
 }
 
 @media(max-width: 700px) {
@@ -91,10 +92,10 @@ nav ul li a:hover {
 
    nav ul {
       flex-direction: column;
-      gap: 14px;
+      gap: 17px;
       text-align: center;
       height: 0;
-      padding-top: 30px;
+      padding-top: 35px;
       overflow: hidden;
       transition: all 200ms linear;
    }

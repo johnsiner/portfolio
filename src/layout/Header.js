@@ -38,7 +38,9 @@ export default function Header() {
                   toggle={() => setNavOpened((state) => !state)}
                />
             </div>
-            <p className="download-resume">Download my Resume</p>
+            <a href={resume} download className="download-resume">
+               Download my Resume
+            </a>
          </div>
       </header>
    );
