@@ -3,6 +3,7 @@ import './Header.css';
 import { useState } from 'react';
 import logo from '../assets/logo.svg';
 import { Squash as Hamburger } from 'hamburger-react';
+import resume from '../assets/Resume-Fabiyi-Johnson.pdf';
 
 export default function Header() {
    const [navOpened, setNavOpened] = useState(false);
@@ -25,7 +26,9 @@ export default function Header() {
                      <a href="#contact">Contact</a>
                   </li>
                   <li>
-                     <a href="#l">Download my Resume</a>
+                     <a href={resume} download>
+                        Download my Resume
+                     </a>
                   </li>
                </ul>
             </nav>
