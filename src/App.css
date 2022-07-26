@@ -1,38 +1,181 @@
 .App {
+  min-height: 100vh;
+
+}
+
+.container {
+  margin-inline: auto;
+  padding: 110px 40px;
+  max-width: 130ch;
+}
+
+.home .container {
+  margin-top: 80px;
+}
+
+.home h1 {
+  font-size: 68px;
+  margin-bottom: 20px;
+}
+
+.home h1 span {
+  color: var(--text-dark);
+}
+
+.home h3 {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.socials p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.socials div {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.socials a {
+  color: var(--text-clr);
+}
+
+.socials i {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 35px;
+}
+
+.stack>p {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.stack>div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stack>div div {
+  box-shadow: 1px 1px 8px 1px hsla(0, 0%, 0%, .3);
+  /* box-shadow: 2px 2px 8px 2px hsla(100, 100%, 100%, .1); */
+
+  border-radius: 5px;
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.stack i {
+  font-size: 30px;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.portfolio {
+  background-color: var(--bg-dark);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.portfolio h1 {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.projects {
+  display: grid;
+  justify-items: center;
+  margin-top: 40px;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(39ch, 1fr));
+}
+
+.projects div {
+  box-shadow: 2px 2px 8px 2px hsla(0, 0%, 0%, .5);
+  /* box-shadow: 2px 2px 13px 2px hsla(100, 100%, 100%, .1); */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all linear 0.2s;
+}
+
+.projects div:hover {
+  transform: scale(1.02);
+}
+
+.projects img {
+  width: 600px;
+}
+
+.projects p {
+  font-size: 17px;
+  padding: 25px;
+}
+
+.projects p span {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.projects p span a {
+  color: var(--text-clr);
+  padding: 6px;
+}
+
+.contact h1 {
+  font-weight: 700;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  max-width: 650px;
+}
+
+.contact form div:first-child {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.form-control {
+  width: 100%;
+  max-width: 650px;
+  background-color: var(--bg-dark);
+  color: var(--text-clr);
+  line-height: 20px;
+  padding: 10px 15px;
+  background-clip: padding-box;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.form-control:focus {
+  outline: 2px solid hsla(100, 100%, 100%, .2);
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: var(--bg-dark);
+  color: var(--text-clr);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+  .projects {
+    grid-template-columns: repeat(auto-fit, minmax(32ch, 1fr));
   }
-  to {
-    transform: rotate(360deg);
+
+  .contact form div:first-child {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .projects {
+    grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
   }
 }
