@@ -26,7 +26,7 @@ export default function Header() {
                      <a href="#contact">Contact</a>
                   </li>
                   <li>
-                     <a href={resume} download>
+                     <a href={resume} download="Resume-Fabiyi-Johnson">
                         Download my Resume
                      </a>
                   </li>
@@ -38,7 +38,11 @@ export default function Header() {
                   toggle={() => setNavOpened((state) => !state)}
                />
             </div>
-            <a href={resume} download className="download-resume">
+            <a
+               href={resume}
+               download="Resume-Fabiyi-Johnson"
+               className="download-resume"
+            >
                Download my Resume
             </a>
          </div>
