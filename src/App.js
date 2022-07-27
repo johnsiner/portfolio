@@ -180,7 +180,7 @@ function App() {
                         <div className="form-group">
                            <textarea
                               className="form-control"
-                              rows="7"
+                              rows="11"
                               name="message"
                               required
                            ></textarea>
