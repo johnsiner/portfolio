@@ -163,7 +163,7 @@ form button {
   border-radius: 5px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 830px) {
   .projects {
     grid-template-columns: repeat(auto-fit, minmax(32ch, 1fr));
   }
